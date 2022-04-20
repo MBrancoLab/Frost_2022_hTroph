@@ -1,0 +1,43 @@
+2	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0145.3	TFCP2	AAACCGGTTY	5.07e-21	5.43e-19	4.05e-16	107	68	68	1020	5.27	23	33.82	13	1.27
+3	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1525.1	NFATC4	VRYGGAAAMW	7.30e-20	2.01e-17	1.50e-14	275	68	68	1020	10.4	23	33.82	16	1.57
+4	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0907.1	HOXC13	BCTCGTAAAAH	2.97e-19	2.59e-17	1.93e-14	87	68	68	1020	9.6	20	29.41	9	0.88
+5	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0606.1	NFAT5	NTTTTCCAYN	1.17e-19	4.84e-17	3.61e-14	413	68	68	1020	7.44	28	41.18	36	3.53
+6	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0625.1	NFATC3	WTTTTCCRYH	6.67e-18	2.55e-15	1.90e-12	382	68	68	1020	5.74	24	35.29	26	2.55
+7	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1642.1	NEUROG2(var.2)	NNVACAGATGGNN	1.32e-16	3.00e-14	2.24e-11	227	68	68	1020	7.11	27	39.71	46	4.51
+8	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1109.1	NEUROD1	NRACAGATGGYNN	1.32e-15	3.01e-13	2.24e-10	228	68	68	1020	7.08	25	36.76	41	4.02
+9	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0624.1	NFATC1	WWTTTCCRHN	6.88e-15	3.08e-12	2.30e-9	448	68	68	1020	3.54	25	36.76	45	4.41
+10	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0152.1	NFATC2	TTTTCCA	3.60e-14	1.94e-11	1.45e-8	540	68	68	1020	5.64	32	47.06	96	9.41
+11	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1105.2	GRHL2	NRAACAGGTTYN	1.80e-13	4.58e-11	3.42e-8	254	68	68	1020	1.21	41	60.29	185	18.14
+12	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0647.1	GRHL1	AAAACCGGTTTD	1.10e-11	7.71e-10	5.75e-7	70	68	68	1020	2.24	19	27.94	32	3.14
+13	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1618.1	Ptf1a	NNACAGATGTTNN	2.99e-11	7.09e-9	5.29e-6	237	68	68	1020	2.98	27	39.71	86	8.43
+14	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0136.2	ELF5	AMSMGGAAGTD	4.91e-11	1.37e-8	1.02e-5	279	68	68	1020	2.6	28	41.18	96	9.41
+15	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0607.1	Bhlha15	SCATATGT	2.61e-10	4.86e-8	3.62e-5	186	68	68	1020	4.16	24	35.29	73	7.16
+16	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1119.1	SIX2	NNCTGAAACCTGATMY	9.57e-10	1.33e-7	9.92e-5	139	68	68	1020	1.07	28	41.18	111	10.88
+17	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1633.1	BACH1	NVTGACTCAGCAN	6.02e-9	6.99e-7	5.21e-4	116	68	68	1020	2.97	19	27.94	51	5.00
+18	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0695.1	ZBTB7C	RCGACCACCGAN	3.75e-9	8.89e-7	6.63e-4	237	68	68	1020	1.16	34	50.00	177	17.35
+19	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1638.1	HAND2	NVCAGATGNN	5.32e-9	1.31e-6	9.77e-4	246	68	68	1020	3.6	29	42.65	130	12.75
+20	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0496.3	MAFK	NGMTGACTCAGCMNH	8.19e-9	1.43e-6	1.07e-3	175	68	68	1020	2.06	24	35.29	89	8.73
+21	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0762.1	ETV2	AACCGGAAATR	3.37e-8	2.32e-6	1.73e-3	69	68	68	1020	1.08	18	26.47	51	5.00
+22	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0150.2	Nfe2l2	CASNATGACTCAGCA	5.25e-8	3.99e-6	2.98e-3	76	68	68	1020	3.86	13	19.12	23	2.25
+23	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0130.1	ZNF354C	MTCCAC	2.92e-8	1.46e-5	1.09e-2	501	68	68	1020	2.67	30	44.12	151	14.80
+24	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1630.1	Znf281	GGTGGGGGAGG	6.86e-8	1.52e-5	1.14e-2	222	68	68	1020	4.22	22	32.35	84	8.24
+25	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0103.3	ZEB1	SNCACCTGSVN	1.00e-7	2.19e-5	1.63e-2	219	68	68	1020	2.01	29	42.65	150	14.71
+26	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1118.1	SIX1	GWAACCTGAKM	1.33e-7	2.19e-5	1.64e-2	165	68	68	1020	4.04	14	20.59	31	3.04
+27	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0039.4	KLF4	NNCCCCACCCHN	7.25e-8	3.60e-5	2.68e-2	496	68	68	1020	3.33	36	52.94	223	21.86
+28	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1570.1	TFAP4(var.2)	AHCATRTGDT	6.21e-7	1.48e-4	1.10e-1	238	68	68	1020	1.34	30	44.12	175	17.16
+29	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1621.1	Rbpjl	NNVACACCTGTBNN	7.01e-7	1.66e-4	1.24e-1	237	68	68	1020	1.04	32	47.06	198	19.41
+30	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0640.2	ELF3	NNCCACTTCCTGNT	3.40e-6	1.22e-3	9.07e-1	358	68	68	1020	9.17	14	20.59	43	4.22
+31	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0820.1	FIGLA	WMCACCTGKW	5.23e-6	1.46e-3	1.09e0	279	68	68	1020	2.6	25	36.76	141	13.82
+32	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0908.1	HOXD11	RTCGTAAAAH	2.68e-5	2.14e-3	1.60e0	80	68	68	1020	1.09	15	22.06	61	5.98
+33	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1123.2	TWIST1	NNDCCAGATGTBN	1.48e-5	3.50e-3	2.61e0	237	68	68	1020	1.11	29	42.65	194	19.02
+34	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1472.1	BHLHA15(var.2)	RVCAGCTGYB	1.73e-5	4.82e-3	3.60e0	279	68	68	1020	1.04	33	48.53	243	23.82
+35	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0089.2	NFE2L1	NVNATGACTCAGCADW	1.10e-4	5.39e-3	4.02e0	49	68	68	1020	1.1	11	16.18	38	3.73
+36	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0598.3	EHF	NNCACTTCCTGTTNN	1.98e-5	6.05e-3	4.51e0	307	68	68	1020	10.2	12	17.65	37	3.63
+37	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA0502.2	NFYB	CYCATTGGCCVV	7.39e-5	1.15e-2	8.61e0	157	68	68	1020	1.06	22	32.35	134	13.14
+38	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1620.1	Ptf1a(var.3)	NVACACCTGTNN	4.83e-5	1.17e-2	8.70e0	243	68	68	1020	1.08	29	42.65	207	20.29
+39	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1629.1	Zic2	NDCACAGCAGGDRG	5.73e-5	1.20e-2	8.96e0	211	68	68	1020	18.4	9	13.24	22	2.16
+40	/Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt	MA1529.1	NHLH2	GGGNCGCAGCTGCGYCCC	5.34e-4	1.33e-2	9.89e0	25	68	68	1020	1.24	7	10.29	18	1.76
+
+# AME (Analysis of Motif Enrichment): Version 5.1.0 compiled on Dec 10 2019 at 06:38:26
+# The format of this file is described at http://meme-suite.org/doc/ame-output-format.html.
+# ame --control --shuffle-- MER31A-active.fa /Users/miguelbranco/Documents/motif_databases/JASPAR/JASPAR2020_CORE_vertebrates_non-redundant_pfms_meme.txt
