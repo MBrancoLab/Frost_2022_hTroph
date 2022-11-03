@@ -45,4 +45,3 @@ names(ltr8.merge)[4:5] = c('ts_ltr8','ts_ltr8b')
 print(msa(ltr8.merge,method='Muscle',type='dna'), show='complete')
 
 
-

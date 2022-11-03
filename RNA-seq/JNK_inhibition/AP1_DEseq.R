@@ -19,7 +19,18 @@ up = subset(res, padj<0.05 & log2FoldChange>1)
 down = subset(res, padj<0.05 & log2FoldChange<(-1))
 
 
-##gene ontology analysis (Supplementary Figure 4A)
+##Volcano plot (Supplementary Figure 4C)
+
+quartz(w=5,h=3)
+mutate(as.data.frame(res), is.sig = padj<0.05 & abs(log2FoldChange)>1) %>%
+ggplot(aes(x=log2FoldChange, y=-log10(padj), colour=is.sig)) +
+	geom_point(size=0.5) +
+	theme_classic() +
+	xlim(-8, 8) +
+	scale_colour_manual(values=c('grey','red'))
+
+
+##gene ontology analysis (Supplementary Figure 4E)
 
 go.ann = function(de.genes) {
 	genes = factor(as.integer(rownames(res) %in% rownames(de.genes)))
@@ -56,7 +67,7 @@ expr = assay(vsd)
 #write.table(expr,'AP1_RNA_vsd.txt',sep='\t',quote=F,col.names=NA) #for GEO submission
 
 
-##Check expression of specific genes (Supplementary Figure 4B)
+##Check expression of specific genes (Supplementary Figure 4F)
 
 expr.tib = as_tibble(expr, rownames='gene') %>%
 	pivot_longer(cols=!gene, values_to='log.expr', names_to='sample') %>%
@@ -72,10 +83,23 @@ plot.gene = function(gene.name) {
 		ylab('Normalised expression')
 }
 
-quartz(w=2, h=3)
-plot.gene('JUN')
+quartz(w=2.4, h=3)
 plot.gene('MMP14')
 plot.gene('NOS3')
+plot.gene('ENG')
+plot.gene('CSF1R')
+
+
+##JNK1 (MAPK8) and JNK2 (MAPK9) expression (Supplementary Figure 4B)
+
+quartz(w=2.4, h=3)
+filter(expr.tib, group=='DMSO', gene %in% c('MAPK8', 'MAPK9')) %>%
+ggplot(aes(x=gene, y=expr)) +
+	geom_bar(stat='summary', fun=mean, width=0.7, fill='lightblue', col='black') +
+		geom_point(position=position_jitter(0.1)) +
+		theme_classic() +
+		xlab('') +
+		ylab('Normalised expression')
 
 
 ##average expression, add gene coordinates
@@ -117,6 +141,7 @@ quartz(w=5, h=3.5)
 filter(te, !(te.name %in% c('MER11D','MER39B','MER41A','MER41C','MER61D'))) %>%
 ggplot(aes(x=te.name, y=fc)) +
 	geom_boxplot(outlier.shape=NA, fill='lightblue') +
+	geom_jitter(size=0.3, width=0.2) +
 	geom_hline(yintercept=0, linetype='dashed') +
 	ylim(-2,3) +
 	theme_classic() +

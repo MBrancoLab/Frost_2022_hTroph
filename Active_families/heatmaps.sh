@@ -9,7 +9,7 @@ module load use.own
 module load localtools
 
 
-#Figure 1C and Supplementary Figure 1A
+#Figure 1C and Supplementary Figure 1B
 
 while read te; do
 

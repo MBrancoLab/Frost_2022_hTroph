@@ -55,11 +55,11 @@ circos.te = function(bed) {
 	#make plot
 	circos.clear()
 	circos.par(gap.degree=0, track.height=0.15)	
-	circos.heatmap(bed$H3K27ac,col=colorRamp2(c(0, 1), c("white", "grey")), cluster=FALSE)
-	circos.heatmap(bed$H3K4me1,col=colorRamp2(c(0, 1), c("white", "orange")))
-	circos.heatmap(bed$H3K4me3,col=colorRamp2(c(0, 1), c("white", "green3")))
-	circos.heatmap(bed$H3K9me3,col=colorRamp2(c(0, 1), c("white", "red1")))
-	circos.heatmap(bed$H3K27me3,col=colorRamp2(c(0, 1), c("white", "purple")))
+	circos.heatmap(bed$H3K27ac,col=colorRamp2(c(0, 1), c("white", "#89AFCF")), cluster=FALSE)
+	circos.heatmap(bed$H3K4me1,col=colorRamp2(c(0, 1), c("white", "#F2B76F")))
+	circos.heatmap(bed$H3K4me3,col=colorRamp2(c(0, 1), c("white", "#BBDC78")))
+	circos.heatmap(bed$H3K9me3,col=colorRamp2(c(0, 1), c("white", "#EB8474")))
+	circos.heatmap(bed$H3K27me3,col=colorRamp2(c(0, 1), c("white", "#BDB9D7")))
 }
 
 
@@ -98,4 +98,4 @@ circos.te(intersect.list$LTR10A)
 circos.te(intersect.list$LTR3A)
 circos.te(intersect.list$MER21A)
 circos.te(intersect.list$MER41B)
-circos.te(intersect.list$MER61C)
+circos.te(intersect.list$MER61E)

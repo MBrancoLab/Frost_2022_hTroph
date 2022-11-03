@@ -24,7 +24,7 @@ over = mutate(over, activity = case_when(rep %in% ts.fam ~ 'TS',
 							TRUE ~ '-'))
 
 
-##enrichment scatter plots (Figure 2C and Supplementary Figure 2B)
+##enrichment scatter plots (Figure 2C and Supplementary Figure 2C)
 
 enr.plot = function(exp) {	
 	filter(over, sample==exp) %>% arrange(activity) %>%

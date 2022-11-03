@@ -12,7 +12,7 @@ meta = read_tsv('metadata.tsv') %>% filter(grepl('released', File.Status))
 dhs2 = inner_join(dhs, meta, by='File.accession')
 
 
-##plot enrichments for a given family (Figure 1C and Supplementary Figure 1B)
+##plot enrichments for a given family (Figure 1C and Supplementary Figure 1C)
 
 plot.dhs = function(te) {
 	quartz(w=2.5,h=2.5)

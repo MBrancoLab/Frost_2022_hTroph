@@ -10,7 +10,7 @@ over = rbind(read_tsv('../Peak_enrichment/hTSC_CutTag_H3K27ac.relaxed.bed_overla
 colnames(over)[1] = 'rep'
 
 
-##enrichment change in selected families (Supplementary Figure 1D)
+##enrichment change in selected families (Supplementary Figure 1E)
 
 te.fams = c('LTR10A','LTR10F','LTR23','LTR2B','LTR3A','LTR7C','LTR8','LTR8B',
 	'MER11D','MER21A','MER31A','MER39','MER39B','MER41A','MER41B','MER41C',
@@ -75,7 +75,7 @@ bed = mutate(bed, TSC.state = case_when(H3K27ac & H3K4me1 & !H3K4me3 ~ 'active_e
 freq = group_by(bed, repname, TSC.state, EVT) %>% summarise(frequency = length(EVT))
 
 
-##plot TSC state frequencies for EVT+ TEs (Supplementary Figure 1E)
+##plot TSC state frequencies for EVT+ TEs (Supplementary Figure 1F)
 
 filter(freq, EVT, TSC.state!='NA') %>%
 ggplot(aes(x=frequency, y=repname, fill=TSC.state)) +

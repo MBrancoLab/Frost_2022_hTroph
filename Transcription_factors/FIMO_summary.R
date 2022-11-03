@@ -9,7 +9,7 @@ for (f in list.files('./FIMO', full.names=TRUE)) {
 }
 
 
-##filter for selected motifs and q<0.05
+##filter for selected motifs and q<0.2
 
 sel.motif = read_tsv('selected_motifs.txt', col_names=c('id','name'))
 

@@ -17,7 +17,7 @@ Data were aligned using the bowtie2.sh script, which also produces bigwig tracks
 
 *RNA-seq*
 
-Data were aligned using the hisat.sh script.
+Data were aligned using the hisat.sh script for gene analyses, or squire.sh for TE analyses.
 
 
 ## Peak enrichment
@@ -28,11 +28,11 @@ A permutation test was used to identify TE families enriched for histone modific
 
 *H3K27ac-enriched families*
 
-The overlap files from the permutation test are used by the k27ac_enrichment.R script to identify H3K27ac-enriched TE families in hTSCs or hESCs, and produce the enrichment scatter plots in Figure 1B.
+The overlap files from the permutation test are used by the k27ac_enrichment.R script to identify H3K27ac-enriched TE families in hTSCs or hESCs, and produce the enrichment scatter plots in Figure 1B and Supplementary Figure 1A.
 
 *ENCODE DHS*
 
-The same permutation test as above is run by permutation_encode.sh (which wraps around permutation_encode.R) on a list of pre-processed bed files from ENCODE with peaks from DNase-seq data for different tissues. The concatenated enrichment values (DHS_enrichments.txt) are used by DHS_enrichment.R to produce the plots in Figure 1C and Supplementary Figure 1B. This also defines criteria to narrow down the list of TE families of interest.
+The same permutation test as above is run by permutation_encode.sh (which wraps around permutation_encode.R) on a list of pre-processed bed files from ENCODE with peaks from DNase-seq data for different tissues. The concatenated enrichment values (DHS_enrichments.txt) are used by DHS_enrichment.R to produce the plots in Figure 1C and Supplementary Figure 1C. This also defines criteria to narrow down the list of TE families of interest.
 
 
 ## Annotations
@@ -44,7 +44,7 @@ The RMasker_outToBed.R script downloads the Repeatmasker file used here and can 
 
 *H3K27ac heatmaps*
 
-The H3K27ac heatmaps in Figure 1C and Supplementary Figure 1A were produced with the heatmaps.sh script.
+The H3K27ac heatmaps in Figure 1C and Supplementary Figure 1B were produced with the heatmaps.sh script.
 
 *Histone modifications*
 
@@ -52,7 +52,7 @@ The histone_mods.R script takes the list of hTSC-active TE families and peak fil
 
 *EVT activity*
 
-The evt_activity.R script first compares the H3K27ac enrichment values between hTSCs and EVT for selected TE families (producing Supplementary Figure 1D). It then intersects EVT-enriched families with several histone modification peaks to classify EVT-active TEs based on their hTSC chromatin state (producing Supplementary Figure 1F).
+The evt_activity.R script first compares the H3K27ac enrichment values between hTSCs and EVT for selected TE families (producing Supplementary Figure 1E). It then intersects EVT-enriched families with several histone modification peaks to classify EVT-active TEs based on their hTSC chromatin state (producing Supplementary Figure 1F).
 
 *TE orthology*
 
@@ -63,11 +63,11 @@ The liftover.sh script takes the list of hTSC-active TE families and runs recipr
 
 *Motif analysis*
 
-The meme.sh script uses the MEME suite to first identify enriched motifs for each TE family of interest using the AME tool (output in 'AME' folder). It then takes the list of enriched motifs and runs FIMO to pinpoint these motifs in individual TE copies (output in 'FIMO' folder). A list of motifs of interest (selected_motifs.txt) was manually compiled based on outputs from select_motifs.R and literatures searches. The FIMO_summary.R script then this list of motifs and the FIMO output to produce the plots in Figure 2A and Supplementary Figure 2A. The alignments in Figure 2D were produced by the family_comparisons.R script.
+The meme.sh script uses the MEME suite to first identify enriched motifs for each TE family of interest using the AME tool (output in 'AME' folder). It then takes the list of enriched motifs and runs FIMO to pinpoint these motifs in individual TE copies (output in 'FIMO' folder). A list of motifs of interest (selected_motifs.txt) was manually compiled based on outputs from select_motifs.R and literatures searches. The FIMO_summary.R script then this list of motifs and the FIMO output to produce the plots in Figure 2A and Supplementary Figure 2A. FIMO_inactive.R was used to make a similar plot but for H3K27ac-negative elements (Supplementary Figure 2B). The alignments in Figure 2D were produced by the family_comparisons.R script.
 
 *Binding enrichment*
 
-The TF_enrichments.R takes the permutation test results from transcription factor profiling data and the lists of hTSC- and hESC-active families to produce the scatter plots in Figure 2C and Supplementary Figure 2B. Binding profiles for JunD and c-Jun across families of interest were produced by ap1_profiles.sh (output in 'AP1_profiles' folder) and ap1_profiles.R (Figure 2E).
+The TF_enrichments.R takes the permutation test results from transcription factor profiling data and the lists of hTSC- and hESC-active families to produce the scatter plots in Figure 2C and Supplementary Figure 2C. Binding profiles for JunD and c-Jun across families of interest were produced by ap1_profiles.sh (output in 'AP1_profiles' folder) and ap1_profiles.R (Figure 2E).
 
 
 ## RNA-seq
@@ -90,7 +90,7 @@ The RNAseq_analysis.R script first renormalises the Okae data, then finds the ac
 
 *JNK inhibition*
 
-The AP1_DEseq.R script performs differential expression analysis on the JNK inhibition data, and produces normalised gene expression values (AP1_RNA_vsd.txt). It then performs gene ontology analysis uwing topGO (Supplementary Figure 4A) and plots the expression of selected genes (Supplementary Figure 4B). The fold chance of JUN-associated gene expression is plotted based on gene promoter proximity to JUN peaks (Figure 3E). Finally, the expression fold change for genes close to hTSC-active TEs is plotted, split by family (Figure 3F).
+The AP1_DEseq.R script performs differential expression analysis on the JNK inhibition data, and produces normalised gene expression values (AP1_RNA_vsd.txt). It produces a volcano plot (Supplementary Figure 4C), performs gene ontology analysis uwing topGO (Supplementary Figure 4E) and plots the expression of selected genes (Supplementary Figure 4B,F). The fold chance of JUN-associated gene expression is plotted based on gene promoter proximity to JUN peaks (Figure 3E). Finally, the expression fold change for genes close to hTSC-active TEs is plotted, split by family (Figure 3F). The TE_expression.R script uses the counts from SQuIRE to plot the expression of selected ERV subfamilies (Supplementary Figure 4G).
 
 
 ## Comparative analysis
@@ -108,7 +108,7 @@ The comparative_analysis.R script first parses the Seqmonk-generated RPKM tables
 
 *RT-qPCR*
 
-The RT-qPCR.R script imports GraphPad Prism files containing normalised data and produces the expression plots in Figures 5 and 6, and Supplementary Figures 5 and 6.
+The RT-qPCR.R script imports mostly GraphPad Prism files containing normalised data and produces the expression plots in Figures 5 and 6, and Supplementary Figures 4F, 5 and 6.
 
 *FACS histograms*
 

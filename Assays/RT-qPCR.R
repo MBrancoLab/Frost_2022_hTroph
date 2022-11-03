@@ -180,3 +180,14 @@ plot_diff('ENG.pzfx', 'ENG_diff_TEAD4')
 plot_diff('ENG.pzfx', 'ENG_diff_SDC')
 plot_diff('ENG.pzfx', 'ENG_diff_CSH')
 
+
+##SR11302 treatment (Supplementary Figure 4??)
+
+sr = read_tsv('SR11302.txt')
+
+quartz(w=2.4, h=3)
+plot_single(filter(sr, gene=='MMP14'))
+plot_single(filter(sr, gene=='NOS3'))
+plot_single(filter(sr, gene=='ENG'))
+
+
