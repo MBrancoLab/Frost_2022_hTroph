@@ -1,8 +1,6 @@
 # Frost_2022_hTroph
 
-Scripts and files used in:
-
-Frost JM, Amante SM, Okae H, Jones EM, Ashley B, Lewis RM, Cleal JK, Caley MP, Arima T, Maffucci T, Branco MR (2022) "Regulation of human trophoblast gene expression by endogenous retroviruses" *bioRxiv*
+Scripts and files used in Frost et al (2023) "Regulation of human trophoblast gene expression by endogenous retroviruses" PMID: 37012406
 
 
 ## Primary processing
